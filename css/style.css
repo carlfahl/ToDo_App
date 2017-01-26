@@ -1,0 +1,19 @@
+body {
+  background: lightgrey;
+}
+
+.myjumbotron {
+  background: azure;
+}
+
+.section {
+  text-align: center;
+}
+
+.table-head {
+  color: crimson;
+}
+
+#tdbody tr td {
+  text-align: left;
+}
