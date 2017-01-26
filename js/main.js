@@ -39,7 +39,7 @@ function removeTodoFromStorage(todo) {
   var data = JSON.parse(localStorage.toDos);
   var new_data = data.filter(function (item) {
     return item.id != todo.id;
-  })
+  });
   localStorage.toDos = JSON.stringify(new_data);
 }
 
@@ -78,6 +78,7 @@ function renderToDos () {
     });
   }
   var data = JSON.parse(localStorage.completeTodos);
+  data.pop();
   data.forEach(function (element) {
     $("#ctdbody").append(buildTodoHtml(element, false));
   });
